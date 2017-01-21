@@ -1,3 +1,84 @@
-<h1>
-  {{title}}
-</h1>
+
+<header class="site-hero">
+  <section>
+    <h1 class="white-text">{{title}}</h1>
+    <p class="white-text flow-text">
+      <strong>{{tagline}}</strong>
+    </p>
+    <div class="row">
+      <div class="col s12 m4 white-text flow-text what-where">
+        {{eventDate}}<br>{{eventTime}}
+      </div>
+      <div class="col s12 m4">
+        <button md-raised-button class="orange lighten-2 white-text text-lighten-4">Join Now</button>
+      </div>
+      <div class="col s12 m4 white-text flow-text what-where">
+        {{eventLocation}}
+      </div>
+    </div>
+  </section>
+</header>
+
+
+<section class="purple darken-4">
+  <div class="container">
+    <div class="row promotion purple-text text-lighten-5">
+      <div *ngFor="let promo of highlights" class="col s12 m4">
+        <div class="icon-holder {{promo.color}}">
+          <md-icon>{{promo.icon}}</md-icon>
+        </div>
+        <h5>{{promo.title}}</h5>
+        <hr>
+        <p style="margin-top: 0;">{{promo.message}}</p>
+      </div>
+    </div>  
+  </div>
+</section>
+
+
+<div class="container">
+  <h3 class="purple-text text-darken-5">Our Leaders</h3>
+  <section class="row">
+    <div *ngFor="let volunteer of volunteers" class="col s12 m6 l4 volunteer">
+      <md-card class="grey lighten-5">
+        <md-card-header>
+          <img md-card-avatar src="{{volunteer.image}}">
+          <md-card-title class="volunteer-title">{{volunteer.name}}</md-card-title>
+          <md-card-subtitle>{{volunteer.title}}</md-card-subtitle>
+        </md-card-header>
+        <md-card-content>{{volunteer.mission}}</md-card-content>
+         <md-card-footer style="text-align: right">
+            <small class="grey-text text-darken-1">{{volunteer.sector}}</small>
+            <button md-button (click)="clicked(volunteer.profile)" class="purple darken-5 white-text">More</button>
+         </md-card-footer>
+      </md-card>
+    </div>    
+  </section>
+</div>
+
+
+<footer class="page-footer purple darken-3">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Start The Discussion</h5>
+        <p class="grey-text text-lighten-4">Please be sure to post on the hashtag #breakingthroughcareers any photos, tweets, or posts that you have.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li *ngFor="let sponsor of sponsors">
+            <a class="grey-text text-lighten-3" href="{{sponsor.url}}" target="_blank">{{sponsor.name}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright purple darken-4">
+    <div class="container">
+    © {{copyrightYear.getYear() + 1900}} Copyright
+    <a class="grey-text text-lighten-4 right" href="http://danielprada.co" target="_blank">About the site</a>
+    </div>
+  </div>
+</footer>
+

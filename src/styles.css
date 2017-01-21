@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+}
+
+.site-hero {
+  background: url("images/i-am-smart.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 3em 1em;
+}
+
+.site-hero section {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 0.5em;
+  padding: 2em;
+}
+
+.site-hero button {
+  font-size: 1.3em;
+  padding: 0.25em 1em;
+}
+
+.site-hero h1, .site-hero p {
+  text-shadow: 1px 3px 13px rgb(0, 0, 0);
+}
+
+.volunteer-title {
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+md-card {
+  margin-bottom: 1em;
+}
+
+md-card-content {
+  margin-top: 1em;
+}
+
+
+md-card-footer small {
+  float: left;
+  margin-left: 23px;
+  margin-top: 6px;
+}
+
+.promotion {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.promotion hr {
+  opacity: 0.15;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.what-where {
+  font-weight: 800;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.promotion md-icon {
+  font-size: 5em;
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+
+.promotion .icon-holder {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 100%;
+  padding: 12px;
+  height: 115px;
+  width: 115px;
+}
