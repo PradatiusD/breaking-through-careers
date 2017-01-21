@@ -12,6 +12,7 @@ export class AppComponent {
   eventTime = '8:30am-1:30pm';
   tagline = 'A 1 day meet & greet between awesome South Florida middle school kids & professionals';
   eventLocation = 'Miami Country Day School';
+  footerMessage = 'Please be sure to use the hashtag #breakingthroughcareers on any photos, tweets, or posts that you have!';
   copyrightYear = new Date();
 
   volunteers = VOLUNTEERS;
