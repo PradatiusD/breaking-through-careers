@@ -38,8 +38,8 @@ md-card {
   margin-bottom: 1em;
 }
 
-md-card-content {
-  margin-top: 1em;
+md-card-subtitle {
+  line-height: 1.2em;
 }
 
 md-card-footer small {
@@ -79,4 +79,58 @@ md-card-footer small {
   padding: 12px;
   height: 115px;
   width: 115px;
+}
+
+.kimberly md-card-content {
+  margin-top: 1em;
+  rgin-top: 22px;
+}
+
+.sponsors figure {
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+}
+
+.sponsors a {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.sponsors img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  padding: 1em;
+  margin: 1em auto;
+}
+
+.venue {
+  background: url("/images/miami-country-day-school-photo.jpg");
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.venue .container {
+  position: relative;
+  height: 100%;
+}
+
+.venue .info {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2em;
+  color: white;
+  background: rgba(128, 0, 128, 0.47);
+  padding: 1em;
+  left: -1em;
 }

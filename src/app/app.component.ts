@@ -8,11 +8,16 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Breaking Through Careers';
-  eventDate = 'Sat, February 18th';
-  eventTime = '8:30am-1:30pm';
-  tagline = 'A 1 day meet & greet between awesome South Florida middle school kids & professionals';
-  eventLocation = 'Miami Country Day School';
-  footerMessage = 'Please be sure to use the hashtag #breakingthroughcareers on any photos, tweets, or posts that you have!';
+  tagline = 'A one day meet & greet between awesome South Florida middle school kids & professionals';
+  event = {
+    date: 'Sat, February 18th',
+    time: '9:00am-1:30pm',
+    eventbrite: 'https://www.eventbrite.com/e/breaking-through-careers-with-breakthrough-miami-knowledge-of-careers-tickets-31435315876',
+    location: 'Miami Country Day School',
+    address: ' 601 Northeast 107th Street, Miami, FL 33161'
+  };
+
+  footerMessage = 'Please be sure to use the hashtag <a href="https://twitter.com/search?f=tweets&q=%23breakingthroughcareers">#breakingthroughcareers</a> on any photos, tweets, or posts that you have!';
   copyrightYear = new Date();
 
   volunteers = VOLUNTEERS;
@@ -27,10 +32,14 @@ export class AppComponent {
 export class Sponsor {
   name: string;
   url:  string;
+  img?: string;
 }
 
 export class Volunteer {
-  name: string;
+  name: {
+    first: string,
+    last: string
+  };
   title: string;
   image: string;
   sector: string;
@@ -48,7 +57,10 @@ export class Highlight {
 
 const VOLUNTEERS: Volunteer[] = [
   {
-    name: 'Kierra Smith', 
+    name: {
+      first: 'Kierra',
+      last:  'Smith'
+    },
     title: 'Senior Site Director',
     image: 'images/kierra.png',
     sector: 'Education',
@@ -57,16 +69,22 @@ const VOLUNTEERS: Volunteer[] = [
     profile: 'https://www.breakthroughmiami.org/portal/leadership-team'
   },
   {
-    name: 'Kimberly Arredondo',
-    title: 'Associate Director',
+    name: {
+      first: 'Kimberly',
+      last: 'Arredondo',
+    },
+    title: 'Associate Director of Research, Prospect Management and Stewardship',
     image: 'images/kimberly.jpg',
-    sector: 'Education',
-    mission: 'I direct our schools research and funding initiatives',
+    sector: 'Fundraising',
+    mission: 'I direct our school\'s research and donor relations',
     organization: 'Ransom Everglades School',
     profile: 'https://www.linkedin.com/in/kimberly-arredondo-ba614651'
   },
   {
-    name: 'Michael Ragheb',
+    name: {
+      first: 'Michael',
+      last: 'Ragheb',
+    },
     title: 'Founder & CEO',
     image: 'images/michael.jpg',
     sector: 'Education',
@@ -75,20 +93,26 @@ const VOLUNTEERS: Volunteer[] = [
     profile: 'https://www.linkedin.com/in/michael-ragheb-52980567'
   },
    {
-    name: 'Daniel Prada',
+    name: {
+      first: 'Daniel',
+      last: 'Prada',
+    },
     title: 'Lead Software Engineer',
     image: 'images/daniel.jpg',
     sector: 'Information Technology',
     mission: 'I build websites & mobile apps',
     organization: 'Spanish Broadcasting System',
     profile: 'https://www.linkedin.com/in/danielprada'
-  },
+  }
 ];
 
 const SPONSORS: Sponsor[] = [
-  {name: 'Breakthrough Collaborative', url:'http://www.breakthroughcollaborative.org/'},
-  {name: 'Brown Club of Miami', url: 'http://brownclubofmiami.com/'},
-  {name: 'Knoweldge of Careers', url: 'http://knowledgeofcareers.com/'}
+  {name: 'Miami Country Day School', url: 'http://www.miamicountryday.org', img:'mcds-logo.png'},
+  {name: 'Breakthrough Collaborative', url:'http://www.breakthroughcollaborative.org', img:'btm-logo.png'},
+  {name: 'Knoweldge of Careers', url: 'http://knowledgeofcareers.com', img: 'koc-logo.png'},
+  {name: 'University of Miami Toppel Center', url:'http://hireacane.miami.edu', img: 'toppel-logo.png'},
+  {name: 'Brown University Latino Alumni Council', url: 'http://bulac.org', img: 'bulac-logo.png'},
+  {name: 'Brown Club of Miami', url: 'http://brownclubofmiami.com', img: 'bcom-logo.png'}
 ];
 
 const HIGHLIGHTS: Highlight[] = [
