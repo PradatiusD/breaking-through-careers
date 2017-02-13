@@ -29,9 +29,42 @@ body {
   text-shadow: 1px 3px 13px rgb(0, 0, 0);
 }
 
+.volunteers { column-count: 3;}
+@media screen and (min-width: 481px) and (max-width: 1024px) {.volunteers { column-count: 2;}}
+@media screen and (max-width: 480px) { .volunteers { column-count: 1;}}
+
+.volunteer {
+  display: inline-block;
+  width: 100%;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.volunteer img {
+  max-width: 100%;
+  height: auto;
+  width: 50%;
+  border: 3px solid #9c27b0;
+  display: block;
+  margin: 0 auto;
+}
+
 .volunteer-title {
   margin-bottom: 10px;
   font-weight: 800;
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 4px;
+}
+
+.volunteer .md-card-header-text, 
+.volunteer md-card-header {
+  height: inherit;
+}
+
+.volunteer md-card-header {
+  margin-bottom: 0em;
+  display: block;
 }
 
 md-card {
@@ -40,6 +73,10 @@ md-card {
 
 md-card-subtitle {
   line-height: 1.2em;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 10px;
 }
 
 md-card-footer small {
@@ -81,10 +118,6 @@ md-card-footer small {
   width: 115px;
 }
 
-.kimberly md-card-content {
-  margin-top: 1em;
-  rgin-top: 22px;
-}
 
 .sponsors figure {
   width: 300px;
@@ -92,6 +125,7 @@ md-card-footer small {
   display: inline-block;
   position: relative;
   background-color: white;
+  margin: 0.75em 0.75em 0.5em 0.75em;
 }
 
 .sponsors a {
@@ -133,4 +167,18 @@ md-card-footer small {
   background: rgba(128, 0, 128, 0.47);
   padding: 1em;
   left: -1em;
+}
+
+nav .brand-logo {
+  font-weight: 300;
+  margin-left: 0.5em;
+  font-size: 24px;
+}
+
+.organization {
+  display: block;
+  color: gray;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin-top: 5px;
 }

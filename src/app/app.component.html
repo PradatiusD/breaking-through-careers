@@ -1,3 +1,15 @@
+<div class="navbar-fixed">
+  <nav class="purple darken-3">
+    <div class="nav-wrapper">
+      <a target="_blank" href="https://www.instagram.com/explore/tags/breakingthroughcareers/" class="brand-logo">#breakingthroughcareers</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a target="_blank" href="{{event.eventbrite}}">Register</a></li>
+        <li><a target="_blank" href="{{event.volunteer}}">Volunteer</a></li>
+        <li><a target="_blank" href="{{event.facebook}}">View on Facebook</a></li>
+      </ul>
+    </div>
+  </nav>  
+</div>
 
 <header class="site-hero">
   <section>
@@ -37,10 +49,10 @@
 
 
 <div class="container">
-  <h3 class="purple-text text-darken-5">Our Leaders</h3>
+  <h3 class="purple-text text-darken-5">Our Dedicated Volunteers</h3>
 
-  <section class="row">
-    <div *ngFor="let volunteer of volunteers" class="col s12 m6 l4 volunteer {{volunteer.name.first.toLowerCase()}}">
+  <section class="row volunteers">
+    <div *ngFor="let volunteer of volunteers" class="volunteer {{volunteer.name.first.toLowerCase()}}">
       <md-card class="grey lighten-5">
         <md-card-header>
           <img md-card-avatar src="{{volunteer.image}}">
@@ -49,6 +61,7 @@
           </md-card-title>
           <md-card-subtitle>
             {{volunteer.title}}
+            <span class="organization">{{volunteer.organization}}</span>
           </md-card-subtitle>
         </md-card-header>
         <md-card-content>{{volunteer.mission}}</md-card-content>
@@ -74,12 +87,14 @@
 </div>
 
 <div class="container sponsors">
-  <h3>Our Sponsors</h3>
-  <figure *ngFor="let sponsor of sponsors">
-    <a href="{{sponsor.url}}" target="_blank">
-      <img src="/images/{{sponsor.img}}" alt="">    
-    </a>
-  </figure>
+  <h3>Our Generous Sponsors</h3>
+  <div style='text-align: center'>
+    <figure *ngFor="let sponsor of sponsors">
+      <a href="{{sponsor.url}}" target="_blank">
+        <img src="/images/{{sponsor.img}}" alt="">    
+      </a>
+    </figure>    
+  </div>
 </div>
 
 
@@ -102,7 +117,7 @@
   </div>
   <div class="footer-copyright purple darken-4">
     <div class="container">
-    © {{copyrightYear.getYear() + 1900}} Copyright
+    © Copyright {{copyrightYear.getYear() + 1900}} Brown Club of Miami
     <a class="grey-text text-lighten-4 right" href="http://danielprada.co" target="_blank">About the site</a>
     </div>
   </div>
