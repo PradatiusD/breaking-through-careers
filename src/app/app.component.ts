@@ -113,9 +113,9 @@ const VOLUNTEERS: Volunteer[] = [
     },
     title: 'Founder & CEO',
     image: 'images/michael.jpg',
-    sector: 'Education',
+    sector: 'Non-Profit',
     mission: 'I engage kids with career opportunities and teach at the University of Miami',
-    organization: 'Ransom Everglades School',
+    organization: 'Knowledge of Careers',
     profile: 'https://www.linkedin.com/in/michael-ragheb-52980567'
   },
    {
