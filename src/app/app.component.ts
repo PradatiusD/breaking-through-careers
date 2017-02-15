@@ -57,6 +57,7 @@ export class Highlight {
   message: string;
 }
 
+
 const VOLUNTEERS: Volunteer[] = [
   {
     name: {
@@ -64,9 +65,9 @@ const VOLUNTEERS: Volunteer[] = [
       last:  'Smith'
     },
     title: 'Senior Site Director',
-    image: 'images/kierra.png',
+    image: 'images/kierra.jpg',
     sector: 'Education',
-    mission: 'I engage young minds with a dynamic curriculum', 
+    mission: 'I assist scholars in setting and meeting personal and academic goals.', 
     organization: 'Breakthrough Collaborative',
     profile: 'https://www.breakthroughmiami.org/portal/leadership-team'
   },
@@ -108,6 +109,18 @@ const VOLUNTEERS: Volunteer[] = [
   },
   {
     name: {
+      first: 'Kenneth',
+      last:  'Garrett'
+    },
+    title: 'Associate Site Director',
+    image: 'images/kenneth.jpg',
+    sector: 'Education',
+    mission: 'I support scholars by providing a safe place to learn and lead.', 
+    organization: 'Breakthrough Collaborative',
+    profile: 'https://www.breakthroughmiami.org/portal/leadership-team'
+  },
+  {
+    name: {
       first: 'Michael',
       last: 'Ragheb',
     },
@@ -132,7 +145,7 @@ const VOLUNTEERS: Volunteer[] = [
   },
   {
     name: {
-      first: 'Bengi',
+      first: 'Benji',
       last: 'Power',
     },
     title: 'Chief Operating Officer',
