@@ -3,8 +3,6 @@
     <div class="nav-wrapper">
       <a target="_blank" href="https://www.instagram.com/explore/tags/breakingthroughcareers/" class="brand-logo">#breakingthroughcareers</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a target="_blank" href="{{event.eventbrite}}">Register</a></li>
-        <li><a target="_blank" href="{{event.volunteer}}">Volunteer</a></li>
         <li><a target="_blank" href="{{event.facebook}}">View on Facebook</a></li>
       </ul>
     </div>
@@ -17,23 +15,17 @@
     <p class="white-text flow-text">
       <strong>{{tagline}}</strong>
     </p>
-    <div class="row">
-      <div class="col s12 m4 white-text flow-text what-where">
-        {{event.date}}<br>{{event.time}}
-      </div>
-      <div class="col s12 m4">
-        <button md-raised-button class="orange lighten-2 white-text text-lighten-4" (click)="clicked(event.eventbrite)">Join Now</button>
-      </div>
-      <div class="col s12 m4 white-text flow-text what-where">
-        {{event.location}}
-      </div>
-    </div>
+    <button md-raised-button class="orange lighten-2 white-text text-lighten-4" (click)="clicked(event.facebook)">View Event</button>
   </section>
 </header>
 
 
+
+
 <section class="purple darken-4">
   <div class="container">
+    <h4 class="purple-text text-lighten-5 promotion">This event allows kids to:</h4>
+
     <div class="row promotion purple-text text-lighten-5">
       <div *ngFor="let promo of highlights" class="col s12 m4">
         <div class="icon-holder {{promo.color}}">
@@ -44,6 +36,23 @@
         <p style="margin-top: 0;">{{promo.message}}</p>
       </div>
     </div>  
+  </div>
+</section>
+
+
+
+<section class="photos">
+  <div class="container" style="text-align: center">
+    <h4 class="purple-text"> A few 📷 from our event!</h4>
+    <p class="flow-text">Please feel free to share more to us by posting on Instagram under <a target="_blank" href="https://www.instagram.com/explore/tags/breakingthroughcareers/" class="brand-logo">#breakingthroughcareers</a></p>
+    <div class="gallery">
+      <img src="/images/gallery-1.jpg">
+      <img src="/images/gallery-2.jpg">
+      <img src="/images/gallery-3.jpg">
+      <img src="/images/gallery-4.jpg">
+      <img src="/images/gallery-5.jpg">
+      <img src="/images/gallery-6.jpg">      
+    </div>
   </div>
 </section>
 
@@ -102,7 +111,7 @@
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="white-text">Start The Discussion</h5>
+        <h5 class="white-text">Continue The Discussion</h5>
         <p class="grey-text text-lighten-4" [innerHTML]=footerMessage></p>
       </div>
       <div class="col l4 offset-l2 s12">

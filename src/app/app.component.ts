@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'Find a Passion';
-  tagline = 'Be part of an awesome interchange between South Florida middle schoolers & professionals';
+  title = '🤗 ¡Gracias! ☺️';
+  tagline = 'To all the volunteers that came to Miami County Day, shared their careers, and mentored the wonderful kids of Breakthrough Collaborative';
   event = {
     date: 'Sat, February 18th',
     time: '9:00am-1:30pm',
@@ -65,7 +65,7 @@ const VOLUNTEERS: Volunteer[] = [
       last:  'Smith'
     },
     title: 'Senior Site Director',
-    image: 'images/kierra.jpg',
+    image: '/images/kierra.jpg',
     sector: 'Education',
     mission: 'I assist scholars in setting and meeting personal and academic goals.', 
     organization: 'Breakthrough Collaborative',
@@ -77,7 +77,7 @@ const VOLUNTEERS: Volunteer[] = [
       last: 'Arredondo',
     },
     title: 'Associate Director of Research, Prospect Management and Stewardship',
-    image: 'images/kimberly.jpg',
+    image: '/images/kimberly.jpg',
     sector: 'Fundraising',
     mission: 'I direct our school\'s research and donor relations',
     organization: 'Ransom Everglades School',
@@ -89,7 +89,7 @@ const VOLUNTEERS: Volunteer[] = [
       last: 'Kénel-Pierre'
     },
     title: 'Assistant Clinical Professor',
-    image: 'images/stefan.jpg',
+    image: '/images/stefan.jpg',
     sector: 'Healthcare',
     mission: 'I help save lives and connect with patients every day',
     organization: 'University of Miami Hospital',
@@ -101,7 +101,7 @@ const VOLUNTEERS: Volunteer[] = [
       last: 'Palomino'
     },
     title: 'Manager & Strategist',
-    image: 'images/jade.jpg',
+    image: '/images/jade.jpg',
     sector: 'Entrepreneurship',
     mission: 'I partner with, mentor & help grow Miami local start-ups',
     organization: 'Endeavor',
@@ -113,7 +113,7 @@ const VOLUNTEERS: Volunteer[] = [
       last:  'Garrett'
     },
     title: 'Associate Site Director',
-    image: 'images/kenneth.jpg',
+    image: '/images/kenneth.jpg',
     sector: 'Education',
     mission: 'I support scholars by providing a safe place to learn and lead.', 
     organization: 'Breakthrough Collaborative',
@@ -125,7 +125,7 @@ const VOLUNTEERS: Volunteer[] = [
       last: 'Ragheb',
     },
     title: 'Founder & CEO',
-    image: 'images/michael.jpg',
+    image: '/images/michael.jpg',
     sector: 'Non-Profit',
     mission: 'I engage kids with career opportunities and teach at the University of Miami',
     organization: 'Knowledge of Careers',
@@ -137,7 +137,7 @@ const VOLUNTEERS: Volunteer[] = [
       last: 'Prada',
     },
     title: 'Lead Software Engineer',
-    image: 'images/daniel.jpg',
+    image: '/images/daniel.jpg',
     sector: 'Information Technology',
     mission: 'I build websites & mobile apps for a latin radio network',
     organization: 'Spanish Broadcasting System',
@@ -149,7 +149,7 @@ const VOLUNTEERS: Volunteer[] = [
       last: 'Power',
     },
     title: 'Chief Operating Officer',
-    image: 'images/benji.jpg',
+    image: '/images/benji.jpg',
     sector: 'Construction',
     mission: 'I help re-envision Miami-Dade county one building at a time',
     organization: 'McKenzie Construction',
@@ -161,7 +161,7 @@ const VOLUNTEERS: Volunteer[] = [
       last: 'Anokye'
     },
     title: 'Digital Brand Associate • VFA Fellow',
-    image: 'images/hannah.jpg',
+    image: '/images/hannah.jpg',
     sector: 'Online Marketing',
     organization: 'Volta Global',
     mission: 'I write stories that celebrate women\'s empowerment & Afro-textured hair',
@@ -173,7 +173,7 @@ const VOLUNTEERS: Volunteer[] = [
       last: 'Segnini'
     },
     title: 'Mental Health Counselor Intern',
-    image: 'images/gabby.jpg',
+    image: '/images/gabby.jpg',
     organization: 'University Hospital Pavilion',
     mission: 'I help patients cope with their mental illness',
     sector: 'Mental Health',
